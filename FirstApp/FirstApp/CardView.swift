@@ -27,6 +27,27 @@ struct CardView: View {
                     .italic()
             }
             .offset(y:-218.0)
+            
+            Button {
+                print("按钮被用户点击")
+            } label: {
+                HStack {
+                    Text("技术总监")
+                        .fontWeight(.heavy)
+                        .foregroundColor(.white)
+                        .accentColor(.white)
+                    Image(systemName: "arrow.right.circle")
+                        .font(Font.title.weight(.medium))
+                        .accentColor(.white)
+                }
+                .padding(.vertical)
+                .padding(.horizontal, 24.0)
+                .background(LinearGradient(gradient: Gradient(colors: gradient), startPoint: .leading, endPoint: .trailing))
+                .clipShape(Capsule())
+                .shadow(color: Color ("ColorShadow"), radius: 6.0, x: 0, y: 3.0)
+            }
+            .offset(y:210.0)
+
         }
         .frame(width: 335.0, height: 545.0)
         .background(LinearGradient(gradient: Gradient(colors: gradient),
