@@ -9,11 +9,17 @@ import SwiftUI
 
 struct CardView: View {
     // MARK: - Properties
+    @State private var fadeIn = false
+    @State private var moveDownard = false
+    @State private var moveUpward = false
+    
     let card: Card
     // MARK: - Body
     var body: some View {
         ZStack {
             Image(card.imageName)
+                .opacity(fadeIn ? 1.0 : 0.0)
+
             VStack {
                 Text(card.title)
                     .font(.largeTitle)
@@ -25,10 +31,10 @@ struct CardView: View {
                     .foregroundColor(.white)
                     .italic()
             }
-            .offset(y: -218.0)
+            .offset(y: moveDownard ? -218.0 : -300.0)
             
             Button {
-                print("按钮被用户点击")
+                playSound(sound: "sound-transitions", type: "mp3")
             } label: {
                 HStack {
                     Text(card.callToAction)
@@ -46,15 +52,25 @@ struct CardView: View {
                 .clipShape(Capsule())
                 .shadow(color: Color("ColorShadow"), radius: 5.0, x: 0, y: 3.0)
             }
-            .offset(y: 210.0)
-
+            .offset(y: moveUpward ? 210.0 : 300.0)
+            
         }
         .frame(width: 335.0, height: 545.0)
         .background(LinearGradient(colors: card.gradientColors, startPoint: .top, endPoint: .bottom))
         .cornerRadius(16.0)
         .shadow(color: Color("ColorShadow"), radius: 8.0)
+        .onAppear {
+            withAnimation(.linear(duration: 1.2)) {
+                fadeIn.toggle()
+            }
+            withAnimation(.linear(duration: 0.8)) {
+                moveDownard.toggle()
+                moveUpward.toggle()
+            }
+        }
     }
 }
+
 
 // MARK: - Preview
 struct CardView_Previews: PreviewProvider {
