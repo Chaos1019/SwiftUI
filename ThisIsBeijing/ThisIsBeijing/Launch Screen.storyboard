@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -13,14 +13,14 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="9nZ-Ma-IKn">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eAu-T2-ElE">
-                                <rect key="frame" x="87" y="115" width="240" height="333"/>
+                                <rect key="frame" x="67.666666666666686" y="239.66666666666663" width="240" height="333"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beijing-Logo" translatesAutoresizingMaskIntoConstraints="NO" id="01w-KU-397">
                                         <rect key="frame" x="0.0" y="0.0" width="240" height="240"/>
@@ -29,8 +29,8 @@
                                             <constraint firstAttribute="width" constant="240" id="vad-4M-2L0"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这里是北京" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ci2-b7-wG8">
-                                        <rect key="frame" x="29.5" y="265" width="181.5" height="43"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="这里是北京" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ci2-b7-wG8">
+                                        <rect key="frame" x="29" y="265" width="182" height="43"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -54,7 +54,7 @@
                             <constraint firstItem="eAu-T2-ElE" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XRk-00-ra4"/>
                             <constraint firstItem="9nZ-Ma-IKn" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="u82-IX-XlO"/>
                             <constraint firstAttribute="trailing" secondItem="9nZ-Ma-IKn" secondAttribute="trailing" id="ujp-w8-bSj"/>
-                            <constraint firstItem="eAu-T2-ElE" firstAttribute="bottom" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="zRJ-Em-wyj"/>
+                            <constraint firstAttribute="centerY" secondItem="eAu-T2-ElE" secondAttribute="centerY" id="zRJ-Em-wyj"/>
                         </constraints>
                     </view>
                 </viewController>

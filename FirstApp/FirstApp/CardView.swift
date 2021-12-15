@@ -40,6 +40,9 @@ struct CardView: View {
                 playSound(sound: "sound-transitions", type: "mp3")
                 hapticImpact.impactOccurred()
                 showAlert.toggle()
+                
+                print(UIDevice.current.systemName)
+
             } label: {
                 HStack {
                     Text(card.callToAction)

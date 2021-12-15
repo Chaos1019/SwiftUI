@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290F1FF82769A69B00206860 /* BeijingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290F1FF72769A69B00206860 /* BeijingView.swift */; };
+		290F1FFA2769A6A700206860 /* HutongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290F1FF92769A6A700206860 /* HutongView.swift */; };
+		290F1FFC2769A6B000206860 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290F1FFB2769A6B000206860 /* SettingsView.swift */; };
+		290F1FFE2769A6F700206860 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290F1FFD2769A6F700206860 /* AppView.swift */; };
 		293471B127685875007CC874 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 293471B027685875007CC874 /* Launch Screen.storyboard */; };
 		298F926027678D9F0014E138 /* ThisIsBeijingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F925F27678D9F0014E138 /* ThisIsBeijingApp.swift */; };
-		298F926227678D9F0014E138 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F926127678D9F0014E138 /* ContentView.swift */; };
+		298F926227678D9F0014E138 /* FoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298F926127678D9F0014E138 /* FoodView.swift */; };
 		298F926427678DA00014E138 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298F926327678DA00014E138 /* Assets.xcassets */; };
 		298F926727678DA00014E138 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298F926627678DA00014E138 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		290F1FF72769A69B00206860 /* BeijingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeijingView.swift; sourceTree = "<group>"; };
+		290F1FF92769A6A700206860 /* HutongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HutongView.swift; sourceTree = "<group>"; };
+		290F1FFB2769A6B000206860 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		290F1FFD2769A6F700206860 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		293471B027685875007CC874 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		298F925C27678D9F0014E138 /* 这里是北京.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "这里是北京.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		298F925F27678D9F0014E138 /* ThisIsBeijingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThisIsBeijingApp.swift; sourceTree = "<group>"; };
-		298F926127678D9F0014E138 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		298F926127678D9F0014E138 /* FoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodView.swift; sourceTree = "<group>"; };
 		298F926327678DA00014E138 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		298F926627678DA00014E138 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -54,9 +62,13 @@
 			isa = PBXGroup;
 			children = (
 				298F926327678DA00014E138 /* Assets.xcassets */,
-				298F926127678D9F0014E138 /* ContentView.swift */,
+				290F1FF72769A69B00206860 /* BeijingView.swift */,
+				298F926127678D9F0014E138 /* FoodView.swift */,
+				290F1FF92769A6A700206860 /* HutongView.swift */,
 				293471B027685875007CC874 /* Launch Screen.storyboard */,
 				298F926527678DA00014E138 /* Preview Content */,
+				290F1FFB2769A6B000206860 /* SettingsView.swift */,
+				290F1FFD2769A6F700206860 /* AppView.swift */,
 				298F925F27678D9F0014E138 /* ThisIsBeijingApp.swift */,
 			);
 			path = ThisIsBeijing;
@@ -141,8 +153,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				298F926227678D9F0014E138 /* ContentView.swift in Sources */,
+				290F1FFC2769A6B000206860 /* SettingsView.swift in Sources */,
+				290F1FF82769A69B00206860 /* BeijingView.swift in Sources */,
+				290F1FFE2769A6F700206860 /* AppView.swift in Sources */,
+				298F926227678D9F0014E138 /* FoodView.swift in Sources */,
 				298F926027678D9F0014E138 /* ThisIsBeijingApp.swift in Sources */,
+				290F1FFA2769A6A700206860 /* HutongView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
